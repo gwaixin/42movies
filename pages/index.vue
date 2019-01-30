@@ -45,13 +45,7 @@ export default {
 </script>
 
 <style lang="scss">
-    .filter-section {
-
-        .dropdown-toggle::after {
-            content: none!important;
-            
-        }
-    }
+    
 </style>
 
 

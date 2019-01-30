@@ -3,7 +3,7 @@
         <div class="card-body d-flex flex-column align-items-start">
             <strong class="d-inline-block mb-2 text-primary">New</strong>
             <h3 class="mb-0">
-            <a class="text-dark" href="#">Featured post</a>
+            <router-link to="/detail/test" class="text-dark" >Featured post</router-link>
             </h3>
             <div class="mb-1 text-muted">
                 <span class="badge badge-pill badge-secondary">Horror</span>
