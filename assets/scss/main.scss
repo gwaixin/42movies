@@ -1,0 +1,9 @@
+
+/* hiding glitch in select2 component */
+.filter-section {
+
+    .dropdown-toggle::after {
+        content: none!important;
+        
+    }
+}
