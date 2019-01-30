@@ -1,11 +1,11 @@
 <template>
-    <div class="movie-actors-section">
+    <div class="movie-cast-section">
 
-        <div class="movie-actors mt-2">
+        <div class="movie-cast mt-2">
             <div class="row mb-3">
-                <div class="col-md-6"><h5>Actors</h5></div>
+                <div class="col-md-6"><h5>Full Cast</h5></div>
                 <div class="col-md-6 text-right">
-                    <b-btn v-b-modal.addActorModal variant="primary" class="btn btn-xs">
+                    <b-btn v-b-modal.addCastModal variant="primary" class="btn btn-xs">
                         Add <fa icon="plus"/>
                     </b-btn>
                 </div>
@@ -44,17 +44,17 @@
             </figure>
 
 
-            <div class="actor-total">
-                <small>Total of 10</small>
+            <div class="cast-total">
+                <small>10 Total</small>
             </div>
         </div>
 
 
         <!-- Modal -->
-        <b-modal id="addActorModal" 
+        <b-modal id="addCastModal" 
                 centered
-                title="Adding New Actor"
-                ref="addActorModal"
+                title="Adding New Cast"
+                ref="addCastModal"
                 hide-footer="true">
             <b-form class="mb-3" ref="addActorForm" @submit="handleSubmit">
                 <b-form-group 
@@ -90,7 +90,7 @@
 export default {
     methods: {
         onHideModal() {
-            this.$refs.addActorModal.hide()
+            this.$refs.addCastModal.hide()
         },
 
         onSubmit(evt) {

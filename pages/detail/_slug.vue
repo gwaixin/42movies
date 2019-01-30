@@ -56,8 +56,8 @@
                                     </div>
 
                                     <div class="card-footer">
-                                        <!-- movie actors -->
-                                        <Actors />
+                                        <!-- movie cast -->
+                                        <Cast />
                                     </div>
 
                                 </div>
@@ -76,7 +76,7 @@
 
 
 <script>
-import Actors from "@/components/detail/Actors"
+import Cast from "@/components/detail/Cast"
 import Genres from "@/components/detail/Genres"
 import Summary from "@/components/detail/Summary"
 
@@ -86,7 +86,7 @@ export default {
         return params.slug
     },
     components: {
-        Actors,
+        Cast,
         Genres,
         Summary
     }
@@ -112,7 +112,7 @@ export default {
         .active { color: lighten(gold, 20%); }
     }
 
-    .movie-actors {
+    .movie-cast {
         figure {
             margin-right: 20px;
             img { float: left; margin-right: 10px; }
