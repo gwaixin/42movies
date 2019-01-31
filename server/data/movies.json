@@ -1,0 +1,294 @@
+[
+    {
+       "title": "Avengers: Infinity War",
+       "summary": "The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.",
+       "image": "https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+       "cast": [
+          {
+             "name": "Robert Downey Jr.",
+             "role": "Iron Man"
+          },
+          {
+             "name": "Chris Hemsworth",
+             "role": "Thor"
+          },
+          {
+             "name": "Mark Ruffalo",
+             "role": "Hulk"
+          },
+          {
+             "name": "Chris Evans",
+             "role": "Captain America"
+          },
+          {
+             "name": "Scarlett Johansson",
+             "role": "Black Widow"
+          },
+          {
+             "name": "Don Cheadle",
+             "role": "War Machine"
+          }
+       ],
+       "ratings": 4,
+       "is_featured": false,
+       "year": 2018
+    },
+    {
+       "title": "Problem Child",
+       "summary": "A young boy is just short of a monster. He is adopted by a loving man and his wacky wife. The laughs keep coming as the boy pushes them to the limits.",
+       "image": "https://m.media-amazon.com/images/M/MV5BYzk3NGI4NjgtYTJkNS00NzBmLTllYTAtYzE1ZGJlOWQ0MDQxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,639,1000_AL_.jpg",
+       "cast": [
+          {
+             "name": "John Ritter",
+             "role": "Benjamin Jr."
+          },
+          {
+             "name": "Jack Warden",
+             "role": "Benjamin Sr."
+          },
+          {
+             "name": "Michael Oliver",
+             "role": "Junior"
+          },
+          {
+             "name": "Gilbert Gottfried",
+             "role": "Mr. Peabody"
+          },
+          {
+             "name": "Amy Yasbeck",
+             "role": "Flo Healy"
+          }
+       ],
+       "ratings": 3,
+       "is_featured": false,
+       "year": 1990
+    },
+    {
+       "title": "Glass",
+       "summary": "Security guard David Dunn uses his supernatural abilities to track Kevin Wendell Crumb, a disturbed man who has twenty-four personalities.",
+       "image": "https://m.media-amazon.com/images/M/MV5BMTY1OTA2MjI5OV5BMl5BanBnXkFtZTgwNzkxMjU4NjM@._V1_SY1000_SX700_AL_.jpg",
+       "cast": [
+          {
+             "name": "James McAvoy",
+             "role": "Polly"
+          },
+          {
+             "name": "Bruce Willis",
+             "role": "David Dunn"
+          },
+          {
+             "name": "Samuel L. Jackson",
+             "role": "Elijah Price"
+          }
+       ],
+       "ratings": 1,
+       "is_featured": false,
+       "year": 2019
+    },
+    {
+       "title": "Spider-Man",
+       "summary": "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family. ",
+       "image": "https://m.media-amazon.com/images/M/MV5BZDEyN2NhMjgtMjdhNi00MmNlLWE5YTgtZGE4MzNjMTRlMGEwXkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_.jpg",
+       "cast": [
+          {
+             "name": "Tobey Maguire",
+             "role": "Spider-Man"
+          },
+          {
+             "name": "Willem Dafoe ",
+             "role": "Green Goblin"
+          },
+          {
+             "name": "Kirsten Dunst",
+             "role": "Mary Jane Watson"
+          }
+       ],
+       "ratings": 3,
+       "is_featured": false,
+       "year": 2002
+    },
+    {
+       "title": "Bohemian Rhapsody",
+       "summary": "The story of the legendary rock band Queen and lead singer Freddie Mercury, leading up to their famous performance at Live Aid (1985). ",
+       "image": "https://m.media-amazon.com/images/M/MV5BNDg2NjIxMDUyNF5BMl5BanBnXkFtZTgwMzEzNTE1NTM@._V1_SY1000_CR0,0,629,1000_AL_.jpg",
+       "cast": [
+          {
+             "name": "Rami Malek",
+             "role": "Freddie Mercury"
+          },
+          {
+             "name": "Lucy Boynton",
+             "role": "Mary Austin"
+          },
+          {
+             "name": "Gwilym Lee",
+             "role": "Brian May"
+          },
+          {
+             "name": "Ben Hardy",
+             "role": "Roger Taylor"
+          },
+          {
+             "name": "Joseph Mazzello",
+             "role": "John Deacon"
+          }
+       ],
+       "ratings": 5,
+       "is_featured": true,
+       "year": 2018
+    },
+    {
+       "title": "Venom",
+       "summary": "A failed reporter is bonded to an alien entity, one of many entities who have invaded Earth. But the entity takes a liking to Earth and decides to protect it.",
+       "image": "https://m.media-amazon.com/images/M/MV5BNzAwNzUzNjY4MV5BMl5BanBnXkFtZTgwMTQ5MzM0NjM@._V1_.jpg",
+       "cast": [
+          {
+             "name": "Tom Hardy",
+             "role": "Venom"
+          },
+          {
+             "name": "Michelle Williams",
+             "role": "Anne Weying"
+          },
+          {
+             "name": "Riz Ahmed",
+             "role": "Riot"
+          }
+       ],
+       "ratings": 3,
+       "is_featured": false,
+       "year": 2018
+    },
+    {
+       "title": "Shutter Island",
+       "summary": "In 1954, a U.S. Marshal investigates the disappearance of a murderer, who escaped from a hospital for the criminally insane. ",
+       "image": "https://m.media-amazon.com/images/M/MV5BYzhiNDkyNzktNTZmYS00ZTBkLTk2MDAtM2U0YjU1MzgxZjgzXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
+       "cast": [
+          {
+             "name": "Leonardo DiCaprio",
+             "role": "Teddy Daniels"
+          },
+          {
+             "name": "Mark Ruffalo",
+             "role": "Chuck Aule"
+          },
+          {
+             "name": "Ben Kingsley",
+             "role": "Dr. Cawley"
+          }
+       ],
+       "ratings": 4,
+       "is_featured": false,
+       "year": 2010
+    },
+    {
+       "title": "The Meg",
+       "summary": "After escaping an attack by what he claims was a 70-foot shark, Jonas Taylor must confront his fears to save those trapped in a sunken submersible.",
+       "image": "https://m.media-amazon.com/images/M/MV5BMjg0MzA4MDE0N15BMl5BanBnXkFtZTgwMzk3MzAwNjM@._V1_.jpg",
+       "cast": [
+          {
+             "name": "Jason Statham",
+             "role": "Jonas Taylor"
+          },
+          {
+             "name": "Bingbing Li",
+             "role": "Suyin"
+          },
+          {
+             "name": "Rainn Wilson",
+             "role": "Morris"
+          },
+          {
+             "name": "Cliff Curtis",
+             "role": "Mac"
+          }
+       ],
+       "ratings": 3,
+       "is_featured": false,
+       "year": 2018
+    },
+    {
+       "title": "BuyBust",
+       "summary": "An anti-drug enforcement agency stages a massive drug bust in the slums of Manila.",
+       "image": "https://m.media-amazon.com/images/M/MV5BM2UyZmNhMzMtMjVhYS00NWNjLThiZDYtY2Q2YzdkYWRmOTc0XkEyXkFqcGdeQXVyNTI5NjIyMw@@._V1_SY1000_CR0,0,692,1000_AL_.jpg",
+       "cast": [
+          {
+             "name": "Anne Curtis",
+             "role": "Nina Manigan"
+          },
+          {
+             "name": "Brandon Vera",
+             "role": "Rico Yatco"
+          },
+          {
+             "name": "Victor Neri",
+             "role": "Bernie Lacson"
+          },
+          {
+             "name": "Arjo Atayde",
+             "role": "Biggie Chen"
+          },
+          {
+             "name": "Levi Ignacio",
+             "role": "Chongki"
+          }
+       ],
+       "ratings": 4,
+       "is_featured": false,
+       "year": 2018
+    },
+    {
+       "title": "Detroit Rock City",
+       "summary": "In 1978, four rebellious teenagers try to scam their way into a KISS concert.",
+       "image": "https://m.media-amazon.com/images/M/MV5BMmU5ZTJmOWQtNTMwMi00NmIzLTk0ZTAtMjNkMTE4YTA0Yzg4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
+       "cast": [
+          {
+             "name": "Giuseppe Andrews",
+             "role": "Lex"
+          },
+          {
+             "name": "James DeBello ",
+             "role": "Trip"
+          },
+          {
+             "name": "Edward Furlong",
+             "role": "Hawk"
+          },
+          {
+             "name": "Sam Huntington",
+             "role": "Jam"
+          },
+          {
+             "name": "Lin Shaye",
+             "role": "Mrs. Bruce"
+          }
+       ],
+       "ratings": 4,
+       "is_featured": false,
+       "year": 1999
+    },
+    {
+       "title": "Pet Sematary",
+       "summary": "Louis Creed, his wife Rachel and their two children Gage and Ellie move to a rural home where they are welcomed and enlightened about the eerie 'Pet Sematary' located near their home. After the tragedy of their cat being killed by a truck, Louis resorts to burying it in the mysterious pet cemetery, which is definitely not as it seems, as it proves to the Creeds that sometimes, dead is better.",
+       "image": "https://m.media-amazon.com/images/M/MV5BMjA2NDc1NDc1Nl5BMl5BanBnXkFtZTgwNDMzNjA1NjM@._V1_SY1000_CR0,0,640,1000_AL_.jpg",
+       "cast": [
+          {
+             "name": "Jason Clarke",
+             "role": "Louis Creed"
+          },
+          {
+             "name": "John Lithgow",
+             "role": "Jud Crandall"
+          },
+          {
+             "name": "Amy Seimetz",
+             "role": "Rachel Creed"
+          }
+       ],
+       "ratings": 3,
+       "is_featured": false,
+       "year": 2019
+    }
+ ]
+ 
+ 

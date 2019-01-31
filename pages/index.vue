@@ -9,6 +9,7 @@
         <div class="row mt-3 mb-3">
             <div class="col-md-6">
                 <Search />
+                <button class="btn btn-primary" @click="test">hala oi</button>
             </div>
             <div class="col-md-6">
                 <div class="sticky-top filter-section pt-1">
@@ -63,12 +64,18 @@ export default {
         Search,
         ListItem
     },
+    methods: {
+
+        test() {
+            this.$axios
+                .$get(process.env.baseUrl + '/api/movie/test')
+                .then(res => {
+                    console.log('testing api', res)
+                })
+        }
+    }
 }
 </script>
-
-<style lang="scss">
-    
-</style>
 
 
 

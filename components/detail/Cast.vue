@@ -55,7 +55,7 @@
                 centered
                 title="Adding New Cast"
                 ref="addCastModal"
-                hide-footer="true">
+                :hide-footer="true">
             <b-form class="mb-3" ref="addActorForm" @submit="handleSubmit">
                 <b-form-group 
                     id="grpActorName"

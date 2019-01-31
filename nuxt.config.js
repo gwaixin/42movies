@@ -2,6 +2,10 @@ const pkg = require('./package')
 
 
 module.exports = {
+  env: {
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+  },
+
   mode: 'universal',
 
   /*
@@ -54,6 +58,7 @@ module.exports = {
         },
       ]
     }],
+    '@nuxtjs/axios'
   ],
 
   /*
