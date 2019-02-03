@@ -1,12 +1,18 @@
 const { Router } = require('express')
-
 const router = Router()
+const Genre = require('../models/genre')
 
 // TODO restful
 
 // list all genres here
 router.get('/genres', (req, res, next) => {
-    // TODO here
+    Genre.find({}, (err, data) => {
+      if (err)
+        res.json({ status: false, error: err })
+      else
+        res.json({ status: true, data: data })
+    })
+    
 })
 
 // add a new movie

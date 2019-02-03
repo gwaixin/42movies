@@ -24,6 +24,13 @@ async function start() {
   const db = dbschema + '://' + dbhost + '/' + dbname
   mongoose.connect(db, { useNewUrlParser: true })
 
+  // to let post request body works
+  const bodyParser = require('body-parser')
+  app.use( bodyParser.json() );       // to support JSON-encoded bodies
+  app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+    extended: true
+  }));
+
   // Build only in dev mode
   if (config.dev) {
     const builder = new Builder(nuxt)

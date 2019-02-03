@@ -15,11 +15,10 @@
                             <div class="col-md-4">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h2>Title Here Title here and Here</h2>
+                                        <h2>{{ movie.title }}</h2>
                                     </div>
                                     <div class="card-block">
-                                        <img class="movie-image" src="//picsum.photos/300/500" alt="">
-                                        
+                                        <img class="movie-image" :src="movie.image" alt="">
                                     </div>
                                 </div>
                                 <div class="movie-rating">
@@ -45,10 +44,10 @@
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <!-- summary -->
-                                                    <Summary class="mb-5" />
+                                                    <p class="mb-5">{{ movie.summary }}</p>
 
                                                     <!-- tags -->
-                                                    <Genres class="mb-3" />
+                                                    <Genres :genres="movie.genres" class="mb-3" />
 
                                                 </div>
                                             </div>
@@ -57,7 +56,7 @@
 
                                     <div class="card-footer">
                                         <!-- movie cast -->
-                                        <Cast />
+                                        <Cast :cast="movie.cast" :movieId="movie._id" @removeCast="removeCast" />
                                     </div>
 
                                 </div>
@@ -78,53 +77,35 @@
 <script>
 import Cast from "@/components/detail/Cast"
 import Genres from "@/components/detail/Genres"
-import Summary from "@/components/detail/Summary"
 
 export default {
+    asyncData ({app, params}) {
+        return app.$axios
+                .$get(process.env.baseUrl + '/api/movies/' + params.slug)
+                .then(({ data }) => {
+                    return {
+                        movie: data
+                    }
+                })
+    },
     validate ({ params }) {
         // Must contain a slug atleast
         return params.slug
     },
     components: {
         Cast,
-        Genres,
-        Summary
+        Genres
+    },
+
+    methods: {
+        removeCast(id) {
+            this.movie.cast.splice(id, 1)
+        }
     }
 }
 </script>
 
 <style lang="scss">
 
-.movie-content {
-    width: 100%;
-    .card {
 
-        background-color: rgba(55, 55, 55, 0.5);
-        color: #fff;
-
-        .movie-image {
-            width: 100%;
-        }
-    }
-
-    .movie-rating {
-        margin-top: 10px;
-        .active { color: lighten(gold, 20%); }
-    }
-
-    .movie-cast {
-        figure {
-            margin-right: 20px;
-            img { float: left; margin-right: 10px; }
-            figcaption.figure-caption { display: inline-block; }
-        }
-    }
-}
-
-.movie-screen {
-    position: absolute;
-    min-height: 800px;
-    width: 100%;
-    z-index: -1;
-}
 </style>

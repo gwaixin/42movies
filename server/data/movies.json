@@ -3,6 +3,7 @@
        "title": "Avengers: Infinity War",
        "summary": "The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.",
        "image": "https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+       "slug": "avengers-infitiy-war",
        "cast": [
           {
              "name": "Robert Downey Jr.",
@@ -37,6 +38,7 @@
        "title": "Problem Child",
        "summary": "A young boy is just short of a monster. He is adopted by a loving man and his wacky wife. The laughs keep coming as the boy pushes them to the limits.",
        "image": "https://m.media-amazon.com/images/M/MV5BYzk3NGI4NjgtYTJkNS00NzBmLTllYTAtYzE1ZGJlOWQ0MDQxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,639,1000_AL_.jpg",
+       "slug": "problem-child",
        "cast": [
           {
              "name": "John Ritter",
@@ -67,6 +69,7 @@
        "title": "Glass",
        "summary": "Security guard David Dunn uses his supernatural abilities to track Kevin Wendell Crumb, a disturbed man who has twenty-four personalities.",
        "image": "https://m.media-amazon.com/images/M/MV5BMTY1OTA2MjI5OV5BMl5BanBnXkFtZTgwNzkxMjU4NjM@._V1_SY1000_SX700_AL_.jpg",
+       "slug": "glass",
        "cast": [
           {
              "name": "James McAvoy",
@@ -89,6 +92,7 @@
        "title": "Spider-Man",
        "summary": "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family. ",
        "image": "https://m.media-amazon.com/images/M/MV5BZDEyN2NhMjgtMjdhNi00MmNlLWE5YTgtZGE4MzNjMTRlMGEwXkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_.jpg",
+       "slug": "spider-man-2002",
        "cast": [
           {
              "name": "Tobey Maguire",
@@ -111,6 +115,7 @@
        "title": "Bohemian Rhapsody",
        "summary": "The story of the legendary rock band Queen and lead singer Freddie Mercury, leading up to their famous performance at Live Aid (1985). ",
        "image": "https://m.media-amazon.com/images/M/MV5BNDg2NjIxMDUyNF5BMl5BanBnXkFtZTgwMzEzNTE1NTM@._V1_SY1000_CR0,0,629,1000_AL_.jpg",
+       "slug": "bohemian-rhapsody",
        "cast": [
           {
              "name": "Rami Malek",
@@ -141,6 +146,7 @@
        "title": "Venom",
        "summary": "A failed reporter is bonded to an alien entity, one of many entities who have invaded Earth. But the entity takes a liking to Earth and decides to protect it.",
        "image": "https://m.media-amazon.com/images/M/MV5BNzAwNzUzNjY4MV5BMl5BanBnXkFtZTgwMTQ5MzM0NjM@._V1_.jpg",
+       "slug": "venom",
        "cast": [
           {
              "name": "Tom Hardy",
@@ -163,6 +169,7 @@
        "title": "Shutter Island",
        "summary": "In 1954, a U.S. Marshal investigates the disappearance of a murderer, who escaped from a hospital for the criminally insane. ",
        "image": "https://m.media-amazon.com/images/M/MV5BYzhiNDkyNzktNTZmYS00ZTBkLTk2MDAtM2U0YjU1MzgxZjgzXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
+       "slug": "shutter-island",
        "cast": [
           {
              "name": "Leonardo DiCaprio",
@@ -185,6 +192,7 @@
        "title": "The Meg",
        "summary": "After escaping an attack by what he claims was a 70-foot shark, Jonas Taylor must confront his fears to save those trapped in a sunken submersible.",
        "image": "https://m.media-amazon.com/images/M/MV5BMjg0MzA4MDE0N15BMl5BanBnXkFtZTgwMzk3MzAwNjM@._V1_.jpg",
+       "slug": "the-meg",
        "cast": [
           {
              "name": "Jason Statham",
@@ -211,6 +219,7 @@
        "title": "BuyBust",
        "summary": "An anti-drug enforcement agency stages a massive drug bust in the slums of Manila.",
        "image": "https://m.media-amazon.com/images/M/MV5BM2UyZmNhMzMtMjVhYS00NWNjLThiZDYtY2Q2YzdkYWRmOTc0XkEyXkFqcGdeQXVyNTI5NjIyMw@@._V1_SY1000_CR0,0,692,1000_AL_.jpg",
+       "slug": "buy-bust",
        "cast": [
           {
              "name": "Anne Curtis",
@@ -241,6 +250,7 @@
        "title": "Detroit Rock City",
        "summary": "In 1978, four rebellious teenagers try to scam their way into a KISS concert.",
        "image": "https://m.media-amazon.com/images/M/MV5BMmU5ZTJmOWQtNTMwMi00NmIzLTk0ZTAtMjNkMTE4YTA0Yzg4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
+       "slug": "destroit-rock-city",
        "cast": [
           {
              "name": "Giuseppe Andrews",
@@ -271,6 +281,7 @@
        "title": "Pet Sematary",
        "summary": "Louis Creed, his wife Rachel and their two children Gage and Ellie move to a rural home where they are welcomed and enlightened about the eerie 'Pet Sematary' located near their home. After the tragedy of their cat being killed by a truck, Louis resorts to burying it in the mysterious pet cemetery, which is definitely not as it seems, as it proves to the Creeds that sometimes, dead is better.",
        "image": "https://m.media-amazon.com/images/M/MV5BMjA2NDc1NDc1Nl5BMl5BanBnXkFtZTgwNDMzNjA1NjM@._V1_SY1000_CR0,0,640,1000_AL_.jpg",
+       "slug": "pet-sematary",
        "cast": [
           {
              "name": "Jason Clarke",

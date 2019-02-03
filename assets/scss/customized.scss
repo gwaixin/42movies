@@ -51,3 +51,60 @@ a:hover { text-decoration: none; color: $secondary; }
 .modal {
     color: $ternary;
 }
+
+
+// detail movies
+.movie-content {
+    width: 100%;
+    .card {
+
+        background-color: rgba(55, 55, 55, 0.5);
+        color: #fff;
+
+        .movie-image {
+            width: 100%;
+        }
+    }
+
+    .movie-rating {
+        margin-top: 10px;
+        .active { color: lighten(gold, 20%); }
+    }
+
+    .movie-cast {
+        figure {
+            margin-right: 35px;
+            img { float: left; margin-right: 10px; }
+            figcaption.figure-caption { display: inline-block; }
+
+            :hover ~ .actor-actions  { opacity: 1; }
+        }
+
+        .actor-actions { 
+            display: inline-block;
+            width: 30px;
+            height: auto;
+            font-size: 14px;
+            margin-left: 5px;
+            position: absolute;
+            opacity: 0;
+
+            span { 
+                display: block;
+                margin-bottom: 6px;
+                margin-top: 0px;
+                :hover { color: $primary; cursor: pointer; }
+            }
+        }
+
+        .actor-actions:hover { opacity: 1; }
+
+    }
+}
+
+.movie-screen {
+    position: absolute;
+    min-height: 800px;
+    width: 100%;
+    z-index: -1;
+}
