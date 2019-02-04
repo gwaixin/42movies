@@ -25,7 +25,7 @@ var movieSchema = new Schema({
     title: { type: String, required: true, trim: true },
     summary: { type: String, required: true, },
     image: { type: String, required: true },
-    cast: { type: Array },
+    cast: [{ name: { type: String, required: true }, role: { type: String, required: true } }],
     slug: { type: String, required: true },
     ratings: { type: Number, max: 5, min: 0 },
     is_featured: { type: Boolean },
@@ -34,5 +34,11 @@ var movieSchema = new Schema({
     created_at: { type: Date, default: new Date()},
     updated_at: { type: Date, default: new Date()},
 });
+
+movieSchema.pre('findOneAndUpdate', function(next) {
+  this.options.runValidators = true;
+  next();
+});
+
 
 module.exports = mongoose.model('Movie', movieSchema);

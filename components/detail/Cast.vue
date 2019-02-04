@@ -14,10 +14,10 @@
             <figure v-for="actor, index in cast"
                     v-bind:key="index"
                     class="figure">
-                <b-img  :src="actor.image ? actor.image : '//placehold.it/75x100'" class="figure-img img-fluid rounded" alt="actor" />
+                <b-img  :src="actor.image ? actor.image : '/images/default-actor.png'" class="figure-img img-fluid rounded" alt="actor" />
                 <figcaption class="figure-caption">
                     <b>{{ actor.name }}</b> <br>
-                    <small>as</small> "{{ actor.role }}"
+                    <small>as</small> <span>"{{ actor.role }}"</span>
                 </figcaption>
                 <div class="actor-actions">
                     <span class="actor-remove" @click="onRemoveActor(index)"><fa icon="times" /></span>
@@ -173,8 +173,10 @@ export default {
                     }
                     if (this.castIndex) {
                         this.cast[this.castIndex] = castInfo
+                        this.getimg(this.cast[this.castIndex])
                     } else {
                         this.cast.push(castInfo)
+                        this.getimg(this.cast[this.cast.length-1])
                     }
 
                     this.resetForm()
@@ -201,6 +203,7 @@ export default {
             self = this
             this.$axios.$delete(url, {data: data}).then( res => {
                 if (res.status) {
+                    Toastr.success('Cast has been removed.', 'Success!!')
                     self.$emit('removeCast', this.actorToDelete.id);
                     this.actorToDelete = null
                 }
@@ -209,7 +212,7 @@ export default {
 
         getimg(cast) {
             let url = 'https://en.wikipedia.org/w/api.php?origin=*&action=query&titles=' + encodeURIComponent(cast.name) +' &prop=pageimages&format=json&pithumbsize=100'
-            cast.image = 'http://placehold.it/75x100'
+            cast.image = '/images/default-actor.png'
             this.$axios.$get(url).then( res => {
                 let pages = res.query.pages
                 if (pages) {

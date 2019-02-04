@@ -5,7 +5,7 @@
             <h3 class="mb-0">
                 <router-link :to="'/detail/' + movie.slug" class="text-dark" >{{ movie.title }}</router-link>
             </h3>
-            <small>({{ movie.year }})</small>
+            <small v-if="movie.year">({{ movie.year }})</small>
             <div class="mt-2 mb-1 text-muted">
                 <Genres :genres="movie.genres.slice(0, 3)" />
             </div>

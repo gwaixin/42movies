@@ -74,7 +74,7 @@ a:hover { text-decoration: none; color: $secondary; }
     .movie-cast {
         figure {
             margin-right: 35px;
-            img { float: left; margin-right: 10px; }
+            img { float: left; margin-right: 10px; max-width: 73px; }
             figcaption.figure-caption { display: inline-block; }
 
             :hover ~ .actor-actions  { opacity: 1; }

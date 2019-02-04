@@ -62,10 +62,9 @@ router.post('/movies', (req, res, next) => {
         year: req.body.year,
     })
 
-    movie.save(data => {
+    movie.save((err, data) => {
+        if (err) { return res.json({ status: false, error: err }) }
         res.json({ status: true, data: data })
-    }, err => {
-        res.json({ status: false, error: err })
     })
 })
 
@@ -74,13 +73,13 @@ router.put('/movies', (req, res, next) => {
     let updated = {}
 
     if (req.body.title) { updated.title = req.body.title }
-    if (req.body.summary) { update.summary = req.body.summary }
-    if (req.body.image) { update.image = req.body.image }
-    if (req.body.cast) { update.cast = req.body.cast }
-    if (req.body.slug) { update.slug = req.body.slug }
-    if (req.body.ratings) { update.ratings = req.body.ratings }
-    if (req.body.is_featured) { update.is_featured = req.body.is_featured }
-    if (req.body.year) { update.year = req.body.year }
+    if (req.body.summary) { updated.summary = req.body.summary }
+    if (req.body.image) { updated.image = req.body.image }
+    if (req.body.slug) { updated.slug = req.body.slug }
+    if (req.body.ratings) { updated.ratings = req.body.ratings }
+    if (req.body.is_featured) { updated.is_featured = req.body.is_featured }
+    if (req.body.year) { updated.year = req.body.year }
+    if (req.body.cast) { updated.cast = req.body.cast }
 
     Movie.findOneAndUpdate({ 
         _id: mongoose.Types.ObjectId(req.body.id)
@@ -91,7 +90,7 @@ router.put('/movies', (req, res, next) => {
 
 
         // otherwise return success result
-        res.json({ status: true, data: movie })
+        res.json({ status: true })
 
     })
 
@@ -99,14 +98,15 @@ router.put('/movies', (req, res, next) => {
 
 
 //
-router.delete('/movies', (req, res, next) => {
-    Movie.findByIdAndRemove({ _id: mongoose.Types.ObjectId(req.body.id) }, (err) => {
+router.delete('/movies/:slug', (req, res, next) => {
+    Movie.findOneAndDelete({ slug: req.params.slug }, (err, data) => {
 
         if (err) { return res.json({ status: false, error: err }) }
 
-
+        if (data == null) { return res.json({ status: false, message: 'No movie found to delete' }) }
+        
         // response success deletion
-        res.json({ status: true, error: err })
+        res.json({ status: true, error: err, id: req.params, data})
     })
 })
 

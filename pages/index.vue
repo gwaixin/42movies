@@ -60,8 +60,10 @@ export default {
     },
     watch: {
         genre: function(val, oldVal) {
-            if (val == null || val == oldVal) { return }
-            this.genreId = val.key
+            if (val == oldVal) {
+                return
+            }
+            this.genreId = val ? val.key : val
             this.getMovies()
         }
     }, 
