@@ -23,6 +23,7 @@
     "mongoose": "^5.4.8",
     "nuxt": "^2.3.4",
     "nuxt-fontawesome": "^0.4.0",
+    "toastr": "^2.1.4",
     "vue-select": "^2.5.1"
   },
   "devDependencies": {

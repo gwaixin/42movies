@@ -100,7 +100,7 @@ export default {
     methods: {
         removeCast(id) {
             this.movie.cast.splice(id, 1)
-        }
+        },
     }
 }
 </script>

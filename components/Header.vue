@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <a href="/">
-                        <h1>MOVIES <span class="primary-color">42</span></h1>
+                        <h1><span class="primary-color">42</span> MOVIES</h1>
                     </a>
                 </div>
             </div>

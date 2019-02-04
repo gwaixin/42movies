@@ -1,7 +1,7 @@
 <template>
     <div class="movie-cast-section">
 
-        <div class="movie-cast mt-2">
+        <div class="movie-cast mt-2" ref="movieCast">
             <div class="row mb-3">
                 <div class="col-md-6"><h5>Full Cast</h5></div>
                 <div class="col-md-6 text-right">
@@ -11,11 +11,10 @@
                 </div>
             </div>
 
-            <!-- https://en.wikipedia.org/w/api.php?action=query&titles=Tobey%20Maguire&prop=pageimages&format=json&pithumbsize=100 -->
             <figure v-for="actor, index in cast"
                     v-bind:key="index"
                     class="figure">
-                <img src="http://placehold.it/50x50" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                <b-img  :src="actor.image ? actor.image : '//placehold.it/75x100'" class="figure-img img-fluid rounded" alt="actor" />
                 <figcaption class="figure-caption">
                     <b>{{ actor.name }}</b> <br>
                     <small>as</small> "{{ actor.role }}"
@@ -38,7 +37,7 @@
                 centered
                 title="Removing Cast"
                 ref="removeCastModal">
-            <h5>Are you sure you want to remove {{ actorToDelete ? '"' + actorToDelete.name + '"' : '' }} from the cast?</h5>
+            <p>Are you sure you want to remove {{ actorToDelete ? '"' + actorToDelete.name + '"' : '' }} from the cast?</p>
             <div slot="modal-footer" class="w-100">
              <b-btn size="sm" class="float-right ml-1" @click="onHideModal">
                No
@@ -91,6 +90,7 @@
 </template>
 
 <script>
+import Toastr from 'toastr'
 
 export default {
     props: {
@@ -103,12 +103,17 @@ export default {
             actorName: null,
             actorRole: null,
             actorToDelete: null,
-            castIndex: null
+            castIndex: null,
         }
     },
     created() {
         this.actorName = null
         this.actorRole = null
+
+        // try to fetch images for the actors
+        this.cast.forEach(cast => {
+            this.getimg(cast)
+        })
     },
 
     methods: {
@@ -174,6 +179,7 @@ export default {
 
                     this.resetForm()
                     this.onHideModal()
+                    Toastr.success('Cast saved.', 'Success!!')
                 }
             }
 
@@ -199,7 +205,26 @@ export default {
                     this.actorToDelete = null
                 }
             })
+        },
+
+        getimg(cast) {
+            let url = 'https://en.wikipedia.org/w/api.php?origin=*&action=query&titles=' + encodeURIComponent(cast.name) +' &prop=pageimages&format=json&pithumbsize=100'
+            cast.image = 'http://placehold.it/75x100'
+            this.$axios.$get(url).then( res => {
+                let pages = res.query.pages
+                if (pages) {
+                    for (var key in pages) {
+                        if (pages[key].thumbnail != null) {
+                            cast.image = pages[key].thumbnail.source
+                            this.$forceUpdate()
+                            return
+                        }
+                    }
+                }
+            })
         }
+
+        
     }
 }
 </script>

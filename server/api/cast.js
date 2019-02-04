@@ -3,10 +3,6 @@ const mongoose = require('mongoose')
 const router = Router()
 const Movie = require('../models/movie')
 
-router.get('/cast', (req, res, next) => {
-	// TODO cast get
-})
-
 router.post('/cast', (req, res, next) => {
 
 	let newcast = { name: req.body.actor_name, role: req.body.actor_role }
