@@ -1,6 +1,7 @@
-# Movies42
+# 42Movies
 
-> 42race practice test
+> 42Movies for 42Race practice test application :
+> Node + Mongo + Nuxt
 
 ## Requirements
 1. Node version latest or v10.15.0
@@ -20,6 +21,7 @@ $ npm install
 $ mongod
 ```
 > After mongod you should be able to see this [Screenshot](https://gyazo.com/94d5f48297d6a871f0251357ed19a8b1)
+
 <br>
 
 ``` bash
@@ -43,9 +45,20 @@ $ npm run dev
 [GET] localhost:3000/api/unseed-movies
 ```
 > After you should be able to see this result [Screenshot](https://gyazo.com/1bb48b793a14236d38219a20e9d93ae8)
+
 <br>
 
+## Testing
+> Note : localhost:3000 must be active for this test to work
 
+``` bash
+# open new terminal
+$ npm test
+```
+Everything should be checked, see example
+[Screenshot](https://gyazo.com/24d26e0e83dffd5c7872151ff87bdb96)
+
+<br>
 
 ## API
 
