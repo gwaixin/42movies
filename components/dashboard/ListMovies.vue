@@ -1,7 +1,10 @@
 <template>
   <div>
     <div class="row">
-      <div
+      <div v-if="movies.length == 0" class="col-md-12">
+        No movie found
+      </div>
+      <div 
           v-for="(movie, index) in movies"
           :key="'movie-' + index" 
           class="col-md-12" :class="movie.is_featured ? 'col-lg-12' : 'col-lg-6'">

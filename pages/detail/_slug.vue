@@ -4,7 +4,14 @@
 
             <!-- <div class="movie-screen bg-dark" style="background-image: url('//picsum.photos/2200/1200')"></div> -->
 
-            <div class="col-lg-12">
+            <div v-if="!movie" class="col-lg-12 text-center">
+                <h2 class="mt-5">
+                    <span class="primary-color">Sorry</span> Movie Not Found
+                </h2>
+                <router-link to="/" class="text-white">Go back home <fa icon="home" /></router-link>
+            </div>
+
+            <div v-if="movie" class="col-lg-12">
 
                 <!-- Movie Content -->
                 <div class="movie-content mt-5">
@@ -92,6 +99,7 @@ export default {
         // Must contain a slug atleast
         return params.slug
     },
+
     components: {
         Cast,
         Genres
