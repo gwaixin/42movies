@@ -34,7 +34,7 @@ $ localhost:3000/api/seed-movies
 ```
 > After you should be able to see this results [Screenshot](https://gyazo.com/ed1c127403e6987e9107bb9a1e456eb3)
 
-These should be in order, if everything went well you can visit this project in ``` localhost:3000```
+> These should be in order, if everything went well you can visit this project in ``` localhost:3000```
 
 <br>
 
