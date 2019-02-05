@@ -30,17 +30,17 @@ $ npm run dev
 
 ``` bash
 # seeds movie data by opening your browser then enter this url
-$ localhost:3000/api/seed-movies
+[GET] localhost:3000/api/seed-movies
 ```
 > After you should be able to see this results [Screenshot](https://gyazo.com/ed1c127403e6987e9107bb9a1e456eb3)
 
-These should be in order, if everything went well you can visit this project in ``` localhost:3000```
+> These should be in order, if everything went well you can visit this project in ``` localhost:3000```
 
 <br>
 
 ``` bash
 # [Optional] you can also remove all data by entering this url
-$ localhost:3000/api/unseed-movies
+[GET] localhost:3000/api/unseed-movies
 ```
 > After you should be able to see this result [Screenshot](https://gyazo.com/1bb48b793a14236d38219a20e9d93ae8)
 <br>
@@ -52,18 +52,27 @@ $ localhost:3000/api/unseed-movies
 
 ``` bash
 # Fetch all movies
-[get] /api/movies 
+[GET] /api/movies
+```
 
+``` bash
 # Fetch all movies filter by keywords title
-[get] /api/movies?search=war
+[GET] /api/movies?search=war
+```
 
+``` bash
 # Fetch all movies filter by genre
 # @params.genre -> id of the genre
-[get] /api/movies?genre=5c593998def33732c4022453
+[GET] /api/movies?genre=5c593998def33732c4022453
+```
 
+``` bash
 # Fetch a specific movie by slug
-[get] /api/movies/pet-sematary
+[GET] /api/movies/pet-sematary
+```
 
+
+``` bash
 # Insert a movie
 # test data types
 let data = {
@@ -76,8 +85,11 @@ let data = {
     is_featured: Boolean,
     year: Integer,
 }
-[post] /api/movies
+[POST] /api/movies
+```
 
+
+``` bash
 # Update a movie
 # test data types
 let data = {
@@ -90,11 +102,14 @@ let data = {
     is_featured: Boolean,
     year: Integer,
 }
-[put] /api/movies          # requires specific @data.id
-[put] /api/movies/:slug    # requires specific @slug
+[PUT] /api/movies          # requires specific @data.id
+[PUT] /api/movies/:slug    # requires specific @slug
+```
 
+
+``` bash
 # Delete a movie
-[delete] /api/movies/:slug # requires specific @slug
+[DELETE] /api/movies/:slug # requires specific @slug
 
 ```
 
