@@ -96,6 +96,36 @@ router.put('/movies', (req, res, next) => {
 
 })
 
+// update a movie by slug
+router.put('/movies/:slug', (req, res, next) => {
+    let updated = {}
+
+    if (req.body.title) { updated.title = req.body.title }
+    if (req.body.summary) { updated.summary = req.body.summary }
+    if (req.body.image) { updated.image = req.body.image }
+    if (req.body.slug) { updated.slug = req.body.slug }
+    if (req.body.ratings) { updated.ratings = req.body.ratings }
+    if (req.body.is_featured) { updated.is_featured = req.body.is_featured }
+    if (req.body.year) { updated.year = req.body.year }
+    if (req.body.cast) { updated.cast = req.body.cast }
+
+    Movie.findOneAndUpdate({ 
+        slug: req.params.slug
+    }, 
+    updated,
+    (err, movie) => {
+        if (err) { return res.json({ status: false, error: err }) }
+
+
+        // otherwise return success result
+        res.json({ status: true })
+
+    })
+
+})
+
+
+
 
 //
 router.delete('/movies/:slug', (req, res, next) => {

@@ -1,6 +1,6 @@
 <template>
     <div class="movie-categories">
-        <span v-for="genre, key in genres"
+        <span v-for="(genre, key) in genres"
             v-bind:key="'genre-' + key"
             class="badge badge-pill badge-secondary mr-1">
             {{ genre.name }}
